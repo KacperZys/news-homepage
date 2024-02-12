@@ -19,6 +19,7 @@
     <header class="header">
       <img class="header__logo" src="assets/images/logo.svg" alt="logo">
       <nav class="nav">
+        <img class="nav__menu-img" src="assets/images/icon-menu.svg" alt="open menu">
         <ul class="nav__list">
           <li class="nav__list-items">Home</li>
           <li class="nav__list-items">New</li>
@@ -30,7 +31,10 @@
     </header>
     <main class="main">
       <section class="main__img-wrapper">
-        <img class="main__img" src="assets/images/image-web-3-desktop.jpg" alt="image of web">
+        <picture>
+          <source srcset="assets/images/image-web-3-mobile.jpg" media="(max-width: 800px)">
+          <img class="main__img" src="assets/images/image-web-3-desktop.jpg" alt="main image">
+        </picture>
       </section>
       <section class="main__title">
         <h1 class="main__h1">
@@ -64,7 +68,7 @@
       </div>
       <div class="aside__articles">
         <h3 class="aside__title">
-          Is VC Funding Dryinig Up?
+          Is VC Funding Drying Up?
         </h3>
         <p class="aside__text">Private funding by CV firms is down 50% YOY. We take a look at what that means</p>
       </div>
