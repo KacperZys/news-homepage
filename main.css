@@ -20,13 +20,16 @@
     display: inline-block;
     font-size: 1.7rem;
     margin: 0 1em;
-    color: gray;
+}
+
+.nav__menu-open {
+    display: none;
     cursor: pointer;
 }
 
-.nav__menu-img {
+.nav__menu-close,
+.nav__hidden-menu {
     display: none;
-    cursor: pointer;
 }
 
 .nav__hidden-menu {
@@ -35,6 +38,16 @@
     position: absolute;
     right: 15px;
     display: none;
+}
+
+.nav__list-items-text {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    cursor: pointer;
+}
+
+.nav__list-items-text:active {
+    color: hsl(240, 100%, 5%);
 }
 
 .main {
@@ -183,8 +196,54 @@
         display: none;
     }
 
-    .nav__menu-img {
+    .nav__menu-open {
         display: block;
+    }
+
+    .nav__menu-close {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .list-wrapper {
+        display: none;
+    }
+
+    .hidden-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 300px;
+        height: 300px;
+        background: rgba(243, 242, 242, 0.8);
+        border: 2px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: auto;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .lastOneActivated {
+        color: hsl(240, 100%, 5%);
+    }
+
+    .nav__list-items {
+        margin: 15px 20px;
+        font-size: 2rem;
+        width: 100px;
     }
 
     .header {
@@ -196,6 +255,10 @@
         grid-column: 1 / 2;
         display: flex;
         flex-direction: column;
+    }
+
+    .main__article {
+        height: 200px;
     }
 
     .main__article,

@@ -19,18 +19,31 @@
     <header class="header">
       <img class="header__logo" src="assets/images/logo.svg" alt="logo">
       <nav class="nav">
-        <img class="nav__menu-img" src="assets/images/icon-menu.svg" alt="open menu">
-        <ul class="nav__list">
-          <li class="nav__list-items">Home</li>
-          <li class="nav__list-items">New</li>
-          <li class="nav__list-items">Popular</li>
-          <li class="nav__list-items">Trending</li>
-          <li class="nav__list-items">Categories</li>
-        </ul>
+        <img class="nav__menu-open" src="assets/images/icon-menu.svg" alt="open menu">
+        <div class="list-wrapper">
+          <ul class="nav__list hidden-menu">
+            <img class="nav__menu-close" src="assets/images/icon-menu-close.svg" alt="close menu">
+            <li class="nav__list-items">
+              <a class="nav__list-items-text" href="#home">Home</a>
+            </li>
+            <li class="nav__list-items">
+              <a class="nav__list-items-text" href="#new">New</a>
+            </li>
+            <li class="nav__list-items">
+              <a class="nav__list-items-text" href="#popular">Popular</a>
+            </li>
+            <li class="nav__list-items">
+              <a class="nav__list-items-text" href="#trending">Trending</a>
+            </li>
+            <li class="nav__list-items">
+              <a class="nav__list-items-text" href="#categories">Categories</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main">
-      <section class="main__img-wrapper">
+      <section class="main__img-wrapper" id="home">
         <picture>
           <source srcset="assets/images/image-web-3-mobile.jpg" media="(max-width: 800px)">
           <img class="main__img" src="assets/images/image-web-3-desktop.jpg" alt="main image">
@@ -50,7 +63,7 @@
         <button class="main__btn">READ MORE</button>
       </section>
     </main>
-    <aside class="aside">
+    <aside class="aside" id="new">
       <h2 class="aside__h2">
         New
       </h2>
@@ -73,7 +86,7 @@
         <p class="aside__text">Private funding by CV firms is down 50% YOY. We take a look at what that means</p>
       </div>
     </aside>
-    <footer class="footer">
+    <footer class="footer" id="popular">
       <div class="footer__articles">
         <img class="footer__img" src="assets/images/image-retro-pcs.jpg" alt="retro PCs">
         <section class="footer__articles-section">
